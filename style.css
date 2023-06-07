@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: hsl(217, 54%, 11%);
+}
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: clamp(150px, 304px, 454px);
+    height: 80%;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 8px;
+    box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.2);
+}
+h3 {
+    color: #fff;
+    transition: 0.2s all;
+}
+h3:hover {
+    color: hsl(178, 100%, 50%);
+    transition: 0.2s all;
+    cursor: pointer;
+}
+hr {
+    border: 1px solid hsl(215, 32%, 27%);
+}
+b {
+    color: #fff;
+    font-weight: 400;
+}
+.image {
+    width: 100%;
+    height: 60%;
+    background-image: url(./images/image-equilibrium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img {
+    background-color: hsla(178, 100%, 50%, 0.4);
+    padding: 7.25rem 7rem;
+    padding-top: 7.3rem;
+    border-radius: inherit;
+    display: none;
+}
+.image:hover img {
+    display: block;
+}
+.create img {
+    width: 10%;
+    height: 10%;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 40%;
+    padding-top: 1rem;
+}
+.text p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20%;
+}
+.price-text,
+.price-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 29%;
+    height: 100%;
+}
+.price-text span {
+    color: hsl(178, 100%, 50%);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+.price-time span {
+    color: hsl(215, 51%, 70%);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.price-text img,
+.price-time img {
+    height: 50%;
+}
+.create {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 68%;
+    height: 25%;
+    transition: 0.2s all;
+}
+.create img {
+    width: 15%;
+    height: 70%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.create p {
+    font-size: 0.8rem;
+}
+.create b:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+    transition: 0.2s all;
+}
